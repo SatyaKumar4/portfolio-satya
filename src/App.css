@@ -1,0 +1,256 @@
+/*navbar*/
+:root {
+  --dark-pink: rgb(210, 25, 1);
+  --light-pink: rgb(255, 235, 251);
+  --purple: rgb(130, 13, 240);
+  --light-purple: rgb(245, 235, 255);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+h1{
+  padding: 2rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+
+
+
+.navbar{
+  margin: 0;
+  background-color: var(--light-pink);
+}
+
+.navbar a{
+  text-decoration: none;
+  
+}
+
+.navbar-icon-container{
+  padding: 1rem;
+  background-color: var(--dark-pink);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  
+
+}
+
+.navbar-icon{
+  color: var(--light-pink);
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 4rem;
+  /* margin: auto; */
+  height: 4rem;
+  width: 4rem;
+  font-weight: bold;
+  border-radius: 50%;
+
+}
+
+.navbar-container{
+  color: var(--dark-pink);
+
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 ;
+}
+
+.nav-list li{
+  padding: 1rem;
+}
+
+.nav-link{
+  color: var(--dark-pink);
+  font-size: 2rem;
+  padding: 2rem;
+
+}
+
+.nav-link:hover{
+  color: var(--light-pink);
+}
+
+/*About*/
+#About{
+  background-color: var(--dark-pink);
+
+}
+
+.AboutSection {
+  color: var(--light-pink);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-pic {
+  object-fit: contain;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  border: 0.2rem solid var(--light-pink);
+  border-radius: 50%;
+}
+
+.about-heading {
+  color: var(--light-purple);
+  text-align: center;
+  
+}
+
+.about-me {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .AboutSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .about-me {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+  }
+  
+  .about-pic {
+    object-fit: contain;
+    display: grid;
+    justify-content: center;
+    margin: 2rem auto;
+    border: 0.2rem solid var(--light-pink);
+    border-radius: 50%;
+  }
+}
+
+
+
+
+
+/*Skills*/
+.skill-section-heading{
+  color: var(--dark-pink);
+  text-align: center;
+}
+
+.SkillDisplay {
+  display: grid;
+  grid-template-columns: 0.33fr 0.33fr 0.33fr;
+  justify-content: center;
+}
+
+.skill-icon {
+  height: 4rem;
+  object-fit: contain;
+}
+
+.skill-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+
+
+}
+
+.skills-container{
+  background-color: var(--light-pink);
+
+}
+
+.skill-name{
+  color: var(--dark-pink);
+  font-weight: bold;
+  font-size:1.5rem;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .SkillDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .SkillDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+/*Projects*/
+.Projects-container{
+  background-color: var(--dark-pink)
+}
+
+.projects-heading{
+  color: var(--light-purple);
+  text-align: center;
+}
+
+
+/*Contact*/
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contact-container{
+  background-color: var(--light-pink);
+  text-align: center;
+  color: var(--dark-pink);
+
+}
+
+.btn{
+  color: var(--dark-pink);
+}
+
+.contact-heading{
+  color: var(--dark-pink);
+  text-align: center;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon{
+  width: 4rem;
+  height: 4rem;
+  padding : 0.5rem;
+}
