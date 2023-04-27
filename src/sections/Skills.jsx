@@ -3,7 +3,7 @@ import cssIcon from '../assets/css3-icon.png';
 import jsIcon from '../assets/javascript-icon.png';
 import reactIcon from '../assets/react-icon.png';
 import nodeIcon from '../assets/node-icon.png';
-import mongoIcon from '../assets/mongoDB-icon.png';
+import mongoIcon from '../assets/mongo-dB-icon.png';
 
 const skillData = [
     {
@@ -60,7 +60,9 @@ const Skills = () => {
 }
 
 
-export const SkillDiv = ({ name, icon }) => {
+export const SkillDiv = (skillData) => {
+     const {name, icon} = skillData
+
     return (
         <div>
             <div className='skill-container'>
